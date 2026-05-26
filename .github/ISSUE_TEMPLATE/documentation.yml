@@ -1,0 +1,19 @@
+name: "📚 Docs Issue"
+description: "Issue template for writing and updating documentation"
+labels: ["documentation"]
+title: "[DOCS] "
+body:
+  - type: textarea
+    id: docs-summary
+    attributes:
+      label: ✍️ Document to Write/Update
+      description: Describe which document you are working on.
+      placeholder: e.g. Update API specification (authentication-related endpoints)
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo-list
+    attributes:
+      label: ✅ Checklist
+      description: List the specific items that need to be written.

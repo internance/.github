@@ -1,0 +1,43 @@
+name: "🐞 Bug Report"
+description: "Issue template for bug resolution"
+labels: ["bug", "priority:high"]
+title: "[BUG] "
+body:
+  - type: textarea
+    id: bug-summary
+    attributes:
+      label: 💡 Bug Description
+      description: Briefly describe the bug that occurred.
+      placeholder:
+        e.g.
+        The screen freezes when attempting to log in.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: 📝 Reproduction Steps and Context
+      description: Describe in order what situation you were in, what action you took, and what problem occurred.
+      placeholder: |
+        e.g.
+        - Context: The user launches the app and is logged out.
+        - Action: Click the login button and enter email and password.
+        - Problem: The button becomes disabled and the screen does not transition.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: 🎯 Expected Result
+      description: Describe what the expected normal result was.
+      placeholder: e.g. After a successful login, the user should be redirected to the main page.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: 📋 Additional Information (Logs, Screenshots, Environment, etc.)
+      description: Attach any relevant materials such as screenshots, error logs, and environment details (OS, browser/app version).

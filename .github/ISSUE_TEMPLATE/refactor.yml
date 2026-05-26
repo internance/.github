@@ -1,0 +1,36 @@
+name: "♻️ Refactor Issue"
+description: "Issue template for code structure improvement and optimization"
+labels: ["refactor"]
+title: "[REFACTOR] "
+body:
+  - type: textarea
+    id: refactor-summary
+    attributes:
+      label: 💡 Refactoring Target and Reason
+      description: Briefly explain what you want to refactor and why.
+      placeholder: e.g. Extract duplicated API call logic into a shared utility.
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-code
+    attributes:
+      label: 🔍 Current Code State (Issues)
+      description: Describe what is problematic about the current code (readability, performance, maintainability, etc.).
+
+  - type: textarea
+    id: todo-list
+    attributes:
+      label: ✅ Checklist (Tasks to implement)
+      description: Write task items as checkboxes.
+      placeholder: |
+        - [ ] Create shared module
+        - [ ] Replace existing logic and write test code
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-effect
+    attributes:
+      label: 🚀 Expected Benefits
+      description: Describe what improvements (performance gains, readability improvements, etc.) are expected after refactoring.

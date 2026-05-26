@@ -1,0 +1,41 @@
+name: "✨ Feature Issue"
+description: "Issue template for new feature development"
+labels: ["feature"]
+title: "[FEAT] "
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 📄 Issue Summary (Feature Overview)
+      description: Briefly summarize the feature you want to implement.
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 📝 Details and Requirements
+      description: Provide additional information related to the feature (background, necessity, specific requirements, etc.).
+
+  - type: textarea
+    id: todo-list
+    attributes:
+      label: ✅ Checklist (Tasks to implement)
+      description: Write implementation items as checkboxes.
+      placeholder: |
+        e.g.
+        - [ ] API design and endpoint implementation (/api/v1/new-feature)
+        - [ ] Database schema update (add table)
+        - [ ] Frontend UI/UX work
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: 📍 References
+      description: List any relevant materials (links, documents, etc.) if available.
+      placeholder: |
+        e.g.
+        - [Figma Design] (https://...)
+        - [Related External Docs] (https://...)

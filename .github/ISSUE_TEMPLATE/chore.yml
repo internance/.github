@@ -1,0 +1,21 @@
+name: "⚙️ Chore Issue"
+description: "Template for miscellaneous tasks such as configuration changes and library updates"
+labels: ["chore"]
+title: "[CHORE] "
+body:
+  - type: textarea
+    id: chore-summary
+    attributes:
+      label: 📄 Task Description
+      description: Describe the task to be performed.
+      placeholder: e.g. Move Redis configuration to environment variables
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo-list
+    attributes:
+      label: ✅ Checklist
+      description: Write out the specific task steps.
+    validations:
+      required: true
